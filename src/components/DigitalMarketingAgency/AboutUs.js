@@ -98,7 +98,7 @@ const AboutUs = () => {
                 <img src={shape1} alt="banner" />
             </div>
 
-            <div className="container">
+            {/* <div className="container">
                 <div className="about-inner-area">
                     <div className="row">
                         {goals.map(goal => {
@@ -124,7 +124,7 @@ const AboutUs = () => {
                         })}
                     </div>
                 </div>
-            </div>
+            </div> */}
 
             <div className="circle-shape1">
                 <img src={shape1} alt="banner" />
