@@ -27,7 +27,7 @@ module.exports = {
     {
       resolve: `gatsby-source-strapi`,
       options: {
-        apiURL: `https://7aa6-2001-818-e963-5c00-2ccd-306e-cee1-31cb.eu.ngrok.io/`,
+        apiURL: `https://7aa6-2001-818-e963-5c00-2ccd-306e-cee1-31cb.eu.ngrok.io`,
         // apiURL: process.env.DEPLOY_URL
         //   ? "https://strapi-rewy-postgres.herokuapp.com"
         //   : "http://localhost:1337",
