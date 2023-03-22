@@ -315,7 +315,7 @@ const NavbarTwo = () => {
                                             onClick={e => e.preventDefault()}
                                             className="nav-link"
                                         >
-                                            Blog
+                                            Eventos
 
                                         </Link>
                                     </li>
