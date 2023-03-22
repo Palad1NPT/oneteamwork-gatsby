@@ -120,7 +120,7 @@ const NavbarTwo = () => {
                                             onClick={e => e.preventDefault()}
                                             className="nav-link"
                                         >
-                                            Serviços <i className='bx bx-chevron-down'></i>
+                                            Soluções de Consultoria <i className='bx bx-chevron-down'></i>
                                         </Link>
 
                                         <ul className="dropdown-menu">
@@ -177,7 +177,7 @@ const NavbarTwo = () => {
                                             onClick={e => e.preventDefault()}
                                             className="nav-link"
                                         >
-                                            Eventos <i className='bx bx-chevron-down'></i>
+                                            Áreas de Actuação <i className='bx bx-chevron-down'></i>
                                         </Link>
 
                                         <ul className="dropdown-menu">
@@ -245,7 +245,7 @@ const NavbarTwo = () => {
                                             onClick={e => e.preventDefault()}
                                             className="nav-link"
                                         >
-                                            Blog
+                                            Eventos
 
                                         </Link>
                                     </li>
