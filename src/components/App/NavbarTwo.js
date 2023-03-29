@@ -438,7 +438,7 @@ const NavbarTwo = () => {
                                             onClick={() => setCollapsed(true)}
                                             className="nav-link"
                                         >
-                                            Contact
+                                            Contactos
                                         </Link>
                                     </li>
                                 </ul>
