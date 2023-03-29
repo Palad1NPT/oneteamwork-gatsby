@@ -1,7 +1,7 @@
 import React from 'react';
 import { useRecoilState } from 'recoil'
 import { collapsedState } from '../../utils/recoil-atoms'
-import {Link} from 'gatsby'
+import { Link } from 'gatsby'
 import logo from "../../assets/images/logo.png"
 
 const NavbarTwo = () => {
@@ -32,21 +32,21 @@ const NavbarTwo = () => {
                 <div className="tarn-nav">
                     <div className="container">
                         <nav className="navbar navbar-expand-lg navbar-light">
-                            <Link 
+                            <Link
                                 to="/"
-                                onClick={() => setCollapsed(true)} 
+                                onClick={() => setCollapsed(true)}
                                 className="navbar-brand"
                             >
                                 <img src={logo} alt="logo" />
                             </Link>
 
-                            <button 
-                                onClick={toggleNavbar} 
+                            <button
+                                onClick={toggleNavbar}
                                 className={classTwo}
-                                type="button" 
-                                data-toggle="collapse" 
-                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
-                                aria-expanded="false" 
+                                type="button"
+                                data-toggle="collapse"
+                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false"
                                 aria-label="Toggle navigation"
                             >
                                 <span className="icon-bar top-bar"></span>
@@ -137,46 +137,157 @@ const NavbarTwo = () => {
                                         <ul className="dropdown-menu">
                                             <li className="nav-item">
                                                 <Link
-                                                    to="/"
+                                                    to="#"
                                                     activeClassName="active"
-                                                    onClick={() => setCollapsed(true)}
+                                                    onClick={e => e.preventDefault()}
                                                     className="nav-link"
                                                 >
-                                                    Diagnóstico RH
+                                                    Transformação Organizacional <i className='bx bx-chevron-down'></i>
                                                 </Link>
-                                            </li>
+                                                <ul className="dropdown-menu">
+                                                    <li className="nav-item">
+                                                        <Link
+                                                            to="/"
+                                                            activeClassName="active"
+                                                            onClick={() => setCollapsed(true)}
+                                                            className="nav-link"
+                                                        >
+                                                            Diagnóstico RH
+                                                        </Link>
+                                                    </li>
 
+                                                    <li className="nav-item">
+                                                        <Link
+                                                            to="/"
+                                                            activeClassName="active"
+                                                            onClick={() => setCollapsed(true)}
+                                                            className="nav-link"
+                                                        >
+                                                            Diagnóstico SAC
+                                                        </Link>
+                                                    </li>
+
+                                                    <li className="nav-item">
+                                                        <Link
+                                                            to="/"
+                                                            activeClassName="active"
+                                                            onClick={() => setCollapsed(true)}
+                                                            className="nav-link"
+                                                        >
+                                                            Diagnóstico Processos
+                                                        </Link>
+                                                    </li>
+
+                                                    <li className="nav-item">
+                                                        <Link
+                                                            to="/"
+                                                            activeClassName="active"
+                                                            onClick={() => setCollapsed(true)}
+                                                            className="nav-link"
+                                                        >
+                                                            Diagnóstico Logística
+                                                        </Link>
+                                                    </li>
+                                                </ul>
+                                            </li>
                                             <li className="nav-item">
                                                 <Link
-                                                    to="/"
+                                                    to="/blogs/concepcao-e-implementacao"
                                                     activeClassName="active"
-                                                    onClick={() => setCollapsed(true)}
+                                                    onClick={e => e.preventDefault()}
                                                     className="nav-link"
                                                 >
-                                                    Diagnóstico SAC
+                                                    Concepção e Implementação <i className='bx bx-chevron-down'></i>
                                                 </Link>
-                                            </li>
+                                                <ul className="dropdown-menu">
+                                                    <li className="nav-item">
+                                                        <Link
+                                                            to="/blogs/plano-carreira"
+                                                            activeClassName="active"
+                                                            onClick={() => setCollapsed(true)}
+                                                            className="nav-link"
+                                                        >
+                                                            PDI
+                                                        </Link>
+                                                    </li>
 
-                                            <li className="nav-item">
-                                                <Link
-                                                    to="/"
-                                                    activeClassName="active"
-                                                    onClick={() => setCollapsed(true)}
-                                                    className="nav-link"
-                                                >
-                                                    Diagnóstico Processos
-                                                </Link>
-                                            </li>
+                                                    <li className="nav-item">
+                                                        <Link
+                                                            to="/"
+                                                            activeClassName="active"
+                                                            onClick={() => setCollapsed(true)}
+                                                            className="nav-link"
+                                                        >
+                                                            Plano Carreiras
+                                                        </Link>
+                                                    </li>
 
-                                            <li className="nav-item">
-                                                <Link
-                                                    to="/"
-                                                    activeClassName="active"
-                                                    onClick={() => setCollapsed(true)}
-                                                    className="nav-link"
-                                                >
-                                                    Diagnóstico Logística
-                                                </Link>
+                                                    <li className="nav-item">
+                                                        <Link
+                                                            to="/"
+                                                            activeClassName="active"
+                                                            onClick={() => setCollapsed(true)}
+                                                            className="nav-link"
+                                                        >
+                                                            Avaliação de Desempenho
+                                                        </Link>
+                                                    </li>
+
+                                                    <li className="nav-item">
+                                                        <Link
+                                                            to="/"
+                                                            activeClassName="active"
+                                                            onClick={() => setCollapsed(true)}
+                                                            className="nav-link"
+                                                        >
+                                                            Compensação e Benefícios
+                                                        </Link>
+                                                    </li>
+
+                                                    <li className="nav-item">
+                                                        <Link
+                                                            to="/"
+                                                            activeClassName="active"
+                                                            onClick={() => setCollapsed(true)}
+                                                            className="nav-link"
+                                                        >
+                                                            Formação e Desenvolvimento
+                                                        </Link>
+                                                    </li>
+
+                                                    <li className="nav-item">
+                                                        <Link
+                                                            to="/blogs/processos"
+                                                            activeClassName="active"
+                                                            onClick={() => setCollapsed(true)}
+                                                            className="nav-link"
+                                                        >
+                                                            Processos
+                                                        </Link>
+                                                    </li>
+
+                                                    <li className="nav-item">
+                                                        <Link
+                                                            to="/"
+                                                            activeClassName="active"
+                                                            onClick={() => setCollapsed(true)}
+                                                            className="nav-link"
+                                                        >
+                                                            Gestão Administrativa
+                                                        </Link>
+                                                    </li>
+
+                                                    <li className="nav-item">
+                                                        <Link
+                                                            to="/"
+                                                            activeClassName="active"
+                                                            onClick={() => setCollapsed(true)}
+                                                            className="nav-link"
+                                                        >
+                                                            Sistema de Gestão
+                                                        </Link>
+                                                    </li>
+                                                </ul>
                                             </li>
                                         </ul>
                                     </li>
@@ -205,7 +316,7 @@ const NavbarTwo = () => {
 
                                             <li className="nav-item">
                                                 <Link
-                                                    to="/"
+                                                    to="/blogs/servico-ao-cliente"
                                                     activeClassName="active"
                                                     onClick={() => setCollapsed(true)}
                                                     className="nav-link"
@@ -278,7 +389,7 @@ const NavbarTwo = () => {
                                                     onClick={() => setCollapsed(true)}
                                                     className="nav-link"
                                                 >
-                                                    EXE Sear
+                                                    Executive Search
                                                 </Link>
                                             </li>
                                         </ul>
@@ -321,8 +432,8 @@ const NavbarTwo = () => {
                                     </li>
 
                                     <li className="nav-item">
-                                        <Link 
-                                            to="/contact" 
+                                        <Link
+                                            to="/contact"
                                             activeClassName="active"
                                             onClick={() => setCollapsed(true)}
                                             className="nav-link"

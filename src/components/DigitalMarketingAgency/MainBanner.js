@@ -30,7 +30,8 @@ const MainBanner = () => {
         <div className="digital-agency-banner">
             <div className="container">
                 <div className="row align-items-center">
-                    <div className="col-lg-6 col-md-12">
+                    <div className="col">
+                        <Image className="main-banner-img" fluid={image.childImageSharp.fluid} />
                         <div className="banner-wrapper-content">
                             <span className="sub-title">One Team Work</span>
                             <ReactWOW delay='.1s' animation='fadeInLeft'>
@@ -52,13 +53,13 @@ const MainBanner = () => {
                         </div>
                     </div>
 
-                    <div className="col-lg-6 col-md-12">
+                    {/* <div className="col-lg-6 col-md-12">
                         <ReactWOW delay='.1s' animation='fadeInUp'>
                             <div className="banner-wrapper-image">
                                 <Image fluid={image.childImageSharp.fluid} />
                             </div>
                         </ReactWOW>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>
