@@ -421,7 +421,7 @@ const NavbarTwo = () => {
 
                                     <li className="nav-item">
                                         <Link
-                                            to="/blog"
+                                            to="/blog/"
                                             activeClassName="active"
                                             onClick={e => e.preventDefault()}
                                             className="nav-link"
